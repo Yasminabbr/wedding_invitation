@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f5efe4;
+    color: #4d563d;
+}
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color:#f5efe4;
+   
+}
+.couple-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #4d563d;
+}
+
+.couple {
+    width: 300px;
+    height: auto;
+}
+.welcome {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #626b4b;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 150px;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.couple {
+    width: 350px;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #626b4b;
+}
+
+@media (max-width: 700px) {
+
+    .logo {
+        width: 170px;
+    }
+
+    .couple {
+        width: 260px;
+    }
+
+    .date {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    .scroll-down {
+        margin-top: 25px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0px;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    color: #4d563d;
+
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 22px;
+
+    animation: arrowMove 1.5s infinite;
+}
+
+@keyframes arrowMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+.wedding-details {
+    min-height: 100vh;
+
+    background-color: #f5efe4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #4d563d;
+}
+
+.details-welcome {
+    max-width: 550px;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+
+    margin-bottom: 25px;
+}
+
+.wedding-details h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+
+    margin-bottom: 45px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 70px;
+}
+
+.detail-item {
+    min-width: 150px;
+}
+
+.icon {
+    font-size: 28px;
+}
+.dateinfo{
+  margin-top: 30px;
+}
+
+.detail-item h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+
+    margin: 12px 0 8px;
+}
+
+.detail-item p {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.location-button {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border: 1px solid #626b4b;
+    border-radius: 25px;
+
+    color: #626b4b;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.location-button:hover {
+    background-color: #626b4b;
+    color: #f5efe4;
+}
+
+.calendar {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+.icon {
+    width: 20px;
+}
+@media (max-width: 600px) {
+
+    .wedding-details {
+        padding: 50px 25px;
+    }
+
+    .details-welcome {
+        font-size: 16px;
+    }
+
+    .wedding-details h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+}
